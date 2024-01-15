@@ -7,3 +7,27 @@
     backdrop-filter: blur 5px;
     box-shadow: inset 0 -1px 0 0 rgb(0, 0, 0, 0.25);
 }
+
+/* .hamborgir-line {
+    @apply w-8 h-1 block bg-white;
+}
+
+.hamborgir-line-space {
+    @apply w-8 h-1 block bg-transparent;
+} */
+
+.active > span.hamborgir-line:nth-child(1) {
+    @apply origin-top-left rotate-45 w-9;
+}
+
+.active > span.hamborgir-line:nth-child(3) {
+    @apply scale-0 -rotate-45 opacity-0;
+}
+
+.active > span.hamborgir-line:nth-child(5) {
+    @apply scale-0 rotate-45 opacity-0;
+}
+
+.active > span.hamborgir-line:nth-child(7) {
+    @apply origin-bottom-left -rotate-45 w-9;
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,32 @@
 </head>
 <body class="bg-gray-900">
     <!-- header (nav) -->
-    <header class="absolute bg-white text-black top-0 left-0 w-full z-10 flex items-center">
+    <header class="absolute bg-gray-900 text-white top-0 left-0 w-full z-10 flex items-center">
         <div class="w-full ml-auto mr-auto px-4 py-3">
             <div class="relative flex justify-between items-center">
                 <div class="flex flex-row items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" class="fill-current" viewBox="0 0 24 24"><path d="M6 18a6.06 6.06 0 0 0 5.17-6 7.62 7.62 0 0 1 6.52-7.51l2.59-.37c-.07-.08-.13-.16-.21-.24-3.26-3.26-9.52-2.28-14 2.18C2.28 9.9 1 15 2.76 18.46z"></path><path d="M12.73 12a7.63 7.63 0 0 1-6.51 7.52l-2.46.35.15.17c3.26 3.26 9.52 2.29 14-2.17C21.68 14.11 23 9 21.25 5.59l-3.34.48A6.05 6.05 0 0 0 12.73 12z"></path></svg>
-                    <h1 class="font-black text-2xl mt-0 mb-0">COFFEE BEANS</h1>
+                    <h1 class="text-white font-black text-2xl mt-0 mb-0">COFFEE BEANS</h1>
+                </div>
+                <div class="flex items-center">
+                    <button id="hamborgir" name="hamborgir" type="button" class="absolute block right-3 lg:hidden">
+                        <span class="hamborgir-line w-8 h-1 block bg-white rounded-sm transition duration-500 ease-out origin-top-left"></span>
+                        <span class="hamborgir-line-space w-8 h-1 block bg-transparent rounded-sm transition duration-500 ease-out"></span>
+                        <span class="hamborgir-line w-8 h-1 block bg-white rounded-sm transition duration-500 ease-out"></span>
+                        <span class="hamborgir-line-space w-8 h-1 block bg-transparent rounded-sm transition duration-500 ease-out"></span>
+                        <span class="hamborgir-line w-8 h-1 block bg-white rounded-sm transition duration-500 ease-out"></span>
+                        <span class="hamborgir-line-space w-8 h-1 block bg-transparent rounded-sm transition duration-500 ease-out"></span>
+                        <span class="hamborgir-line w-8 h-1 block bg-white rounded-sm transition duration-500 ease-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="navmenu" class="hidden absolute py-6 right-4 max-w-64 w-full bg-gray-900 top-full rounded-lg shadow-lg lg:block lg:static lg:shadow-none lg:max-w-none lg:bg-transparent lg:py-0">
+                        <ul class="lg:flex lg:flex-row">
+                            <li class="group"><a href="#home" class="text-base py-2 mx-8 flex origin-left group-hover:scale-125 transition duration-500 ease-out">Home</a></li>
+                            <li class="group"><a href="#pics" class="text-base py-2 mx-8 flex origin-left group-hover:scale-125 transition duration-500 ease-out">Pictures</a></li>
+                            <li class="group"><a href="#about" class="text-base py-2 mx-8 flex origin-left group-hover:scale-125 transition duration-500 ease-out">About</a></li>
+                            <li class="group"><a href="#about" class="text-base py-2 mx-8 flex origin-left group-hover:scale-125 transition duration-500 ease-out">Contact</a></li>
+                            <li class="group"><a href="rate" class="text-base py-2 mx-8 flex origin-left group-hover:scale-125 transition duration-500 ease-out">Rate</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
